@@ -1,0 +1,135 @@
+*{
+  box-sizing: border-box;
+
+}
+
+html{
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+.container {
+  max-width: 1100px;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.site-header {
+  background-color: darkblue;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.site-header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo{
+  background-color: transparent;
+  object-fit: cover;
+}
+.btn {
+  color: red;
+  font-size: 48px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+.btn:hover{
+  transform: scale(1.5);
+  color: rgb(110, 43, 43);
+}
+
+.btn:active{
+  opacity: 0.6;
+}
+
+/* MAIN */
+  .main-content{
+    flex-grow: 1;
+  }
+
+  .site-title{
+    font-size: 48px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.535);
+  }
+
+  .site-footer{
+    background-color: aqua ;
+  }
+
+  /* MODAL */
+  .modal{
+    position: fixed;
+    top: 60%;
+    left: calc(50% - 250px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    min-width: 500px;
+    min-height: 200px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    line-height: 2;
+    font-weight: 500;
+    text-align: center;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+    border-radius: 8px;
+  }
+
+  .event{
+    display: none;
+  }
+
+  .event__list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .event__item{
+    max-width: 220px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    height: 300px;
+    margin: 20px;
+  }
+
+  .even__top{
+    background-color: blue;
+    color: aqua;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .event__title{
+    font-size: 36px;
+    text-align: center;
+    color: black;
+    background-color: white;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .event__tetx{
+    background-color: rgba(158, 145, 145, 0.685);
+    padding: 10px;
+  }

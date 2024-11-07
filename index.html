@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keyboart info</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__container container">
+      <a href="/">
+        <img class="logo" src="img/sticker.webp" alt="" width="180" height="150">
+      </a>
+      <a class="btn" href="https://github.com/SaidakbarFrontend" target="_blank">GitHub</a>
+    </div>
+  </header>
+  <!-- MAIN -->
+  <main class="main-content">
+    <div class="container">
+      <h1 class="site-title">
+        JavaScript Key Code <span class="keycode"></span>
+        </h1>
+        <div class="event">
+          <ul class="event__list">
+          <li class="event__item">
+            <div class="even__top">event.key</div>
+            <div class="event__title"></div>
+            <div class="event__tetx">The value of the key pressed. Acaunts for modifiers keys that return CAPS and alternate chears.
+            </div>
+          </li>
+
+          <li class="event__item">
+            <div class="even__top">event.location</div>
+            <div class="event__title event__location"></div>
+            <div class="event__tetx">
+              Some keys exist more than once on your keyboard. This provides the location of the key pressed. Try it with both shifts.
+            </div>
+          </li>
+
+          <li class="event__item">
+            <div class="even__top">event.code</div>
+            <div class="event__title event__code"></div>
+            <div class="event__tetx">
+              The physical key on the keyboard. Doesn't care if you are holding a modifier like Shift.
+            </div>
+          </li>
+
+          <li class="event__item">
+            <div class="even__top">event.which</div>
+            <div class="event__title event__which"></div>
+            <div class="event__tetx">
+              even.which and even.keyCode are deprecated in modern browsers.Use .key or .code instead.
+            </div>
+          </li>
+        </ul>
+        </div>
+    </div>
+      </main>
+      <footer class="site-footer">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam placeat similique dolorum nemo, quae odit delectus consequuntur? Temporibus possimus voluptatem explicabo accusantium, quae cum libero nam illum qui provident corporis!</p>
+      </footer>
+      <div class="modal">Press any key to the <br>JavaScript even keycode info</div>
+  <!-- JS -->
+  <script src="main.js"></script>
+</body>
+</html>
