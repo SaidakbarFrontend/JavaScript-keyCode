@@ -69,7 +69,14 @@ body{
   }
 
   .site-footer{
-    background-color: aqua ;
+    background-color: black ;
+  }
+
+  .site-footer p{
+    font-size: 36px;
+    margin-left:60px;
+    color: brown;
+    text-shadow: rgba(23, 182, 199, 0.508) 1px 0 10px;
   }
 
   /* MODAL */
@@ -106,6 +113,10 @@ body{
   }
 
   .event__item{
+    display: flex;
+      flex-direction: column;
+      justify-content:space-between;
+      align-content: baseline;
     max-width: 220px;
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -114,8 +125,8 @@ body{
   }
 
   .even__top{
-    background-color: blue;
-    color: aqua;
+    background-color: rgb(19, 19, 212);
+    color: black;
     text-align: center;
     font-size: 24px;
   }
